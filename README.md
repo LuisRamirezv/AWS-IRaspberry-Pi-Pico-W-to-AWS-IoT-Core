@@ -27,6 +27,18 @@ _A thing resource is a digital representation of a physical device or logical en
 ![image](https://github.com/user-attachments/assets/5ffe5d64-de35-45de-b9a1-f36c1b3eda58)
 
 # Step 3 : Coding the scripts to connect the device with AWS IoT Core.
+Add the certificate files to your Raspberry Pi.
 
+1. Create a file named simple.py inside a directory called "lib". Paste the code from the repository into this file or copy the file directly. Save the file.
+
+2. In the main directory, create or copy a new file named main.py, this file will establish the connection.
+
+3. Inside main.py, update the following:
+  - Add your Wi-Fi name and password to enable the internet connection.
+  - Specify the required file names inside the quotation marks "".
 
 ![image](https://github.com/user-attachments/assets/d9ef5eef-1538-4f9d-88b1-b257993fb362)
+
+more ...
+
+Thanks :+1:
