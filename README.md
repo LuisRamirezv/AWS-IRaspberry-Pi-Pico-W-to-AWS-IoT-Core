@@ -1,6 +1,8 @@
 ## Connecting your Raspberry Pi Pico W to AWS IoT Core.
 This is a proyect that I followed from the video [video](https://www.youtube.com/watch?v=DEBmpVPnZb0) from **Shilleh**.
 
+This is my [video](https://youtube.com/shorts/qu2GPxT8vm0?feature=share) with my raspberry Pi PICO 2 W using the AWS IoT Core services.
+
 # Step 1 : Configuring AWS IoT Core policies.
 To be able to make a connection between the Raspberry Pi and AWS we have to create some policies that will allow the communication.
 in the Policies option, go to the bottom of the page until Policy Document and create four new Statement.
@@ -39,6 +41,16 @@ Add the certificate files to your Raspberry Pi.
 
 ![image](https://github.com/user-attachments/assets/d9ef5eef-1538-4f9d-88b1-b257993fb362)
 
-more ...
+Once you add all the necessary information, run the code and go to the management console in your AWS account. This is what you will see on the screen if everything is okay
+
+![image](https://github.com/user-attachments/assets/1c4e4dab-d863-42a2-9f5c-67decb0f89c3)
+
+Click on the MQTT test client, select Publish to a topic, and fill in the required information. For example, the topic name should be "LED", and the message payload should be "toggle", because we use those names in the main code to trigger a response from AWS IoT to the Raspberry Pi.
+
+![image](https://github.com/user-attachments/assets/ca348074-cdd4-451c-9966-b2007b7686d0)
+
+Now, click the Publish button, and you're done!
+
+This is what you expect to see now. => [video](https://youtube.com/shorts/qu2GPxT8vm0?feature=share).
 
 Thanks :+1:
